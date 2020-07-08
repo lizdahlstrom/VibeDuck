@@ -1,0 +1,12 @@
+{
+  "spotify": {
+    "client_id": "",
+    "client_secret": ""
+  },
+  "frontend": {
+    "uri": "http://localhost:3000"
+  },
+  "functions": {
+    "uri": "http://localhost:5000/MY_APP/us-central1"
+  }
+}
