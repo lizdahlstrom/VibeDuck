@@ -2,8 +2,8 @@ import React, { useContext, memo } from 'react';
 import { SettingsContext } from '../../contexts/SettingsContext';
 import {
   Grid,
-  ExpansionPanel,
-  ExpansionPanelSummary,
+  Accordion,
+  AccordionSummary,
   Typography,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -19,8 +19,8 @@ const GenerationSettings = () => {
 
   return (
     <Grid item>
-      <ExpansionPanel defaultExpanded className={classes.panel}>
-        <ExpansionPanelSummary
+      <Accordion defaultExpanded className={classes.panel}>
+        <AccordionSummary
           className={classes.summary}
           expandIcon={<ExpandMoreIcon />}
           aria-controls='panel1a-content'
@@ -34,11 +34,11 @@ const GenerationSettings = () => {
             }}>
             Reset
           </CachedIcon>
-        </ExpansionPanelSummary>
+        </AccordionSummary>
         {settings.map((setting) => (
           <Setting key={setting.name} setting={setting} />
         ))}
-      </ExpansionPanel>
+      </Accordion>
     </Grid>
   );
 };
