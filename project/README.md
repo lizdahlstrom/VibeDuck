@@ -14,7 +14,7 @@ Now you need a Spotify developer account. You can get one [here](https://develop
 
 1. Create an app
 2. Note down the ClientID and secret.
-3. Open Settings and add  `http://localhost:3000/` to Redirect URIs.
+3. Open Settings and add `http://localhost:3000/` to Redirect URIs.
 4. Don't forget to save.
 5. Keep this tab open for step 3.
 
@@ -42,8 +42,9 @@ Now you need to configure two files.
 ## Run the project locally
 
 1. Run `npm install` in the root folder and `/functions` folder.
-2. `npm run serve` in the `/functions` folder.
-3. `npm start` in the root folder.
+2. Add and use `vibe-duck`` alias with [Firebase CLI](https://firebase.google.com/docs/cli)
+3. `npm run serve` in the `/functions` folder.
+4. `npm start` in the root folder.
 
 ## Deployment
 
