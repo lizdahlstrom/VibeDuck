@@ -13,6 +13,8 @@ This repo contains the Wiki which was authored during the development process of
 - Test docs
 - Demo video
 
+Entry point: [Home.md](project.wiki/Home.md)
+
 ## Project folder
 
 Contains all source code and instructions on how to set the project up.
