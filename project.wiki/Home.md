@@ -1,26 +1,26 @@
 # VibeDuck - Playlist Generator
 
-- [Post Mortem](post-mortem)
-- [Project Vision](project-vision)
-- [Product Backlog](product-backlog)
+- [Post Mortem](Post-mortem.md)
+- [Project Vision](Project-vision.md)
+- [Product Backlog](Product-backlog.md)
 
 ## Sprint backlogs
 
-- [Iteration -1](sprint-backlog-‐1)
-- [Iteration 0](sprint-backlog-0)
-- [Iteration 1](sprint-backlog-1)
-- [Iteration 2](sprint-backlog-2)
-- [Iteration 3](sprint-backlog-3)
-- [Iteration 4](sprint-backlog-4)
-- [Iteration 5](sprint-backlog-5)
-- [Iteration 6](sprint-backlog-6)
-- [Iteration 7](sprint-backlog-7)
-- [Iteration 8](sprint-backlog-8)
+- [Iteration -1](Sprint-backlog-‐1.md)
+- [Iteration 0](Sprint-backlog-0.md)
+- [Iteration 1](Sprint-backlog-1.md)
+- [Iteration 2](Sprint-backlog-2.md)
+- [Iteration 3](Sprint-backlog-3.md)
+- [Iteration 4](Sprint-backlog-4.md)
+- [Iteration 5](Sprint-backlog-5.md)
+- [Iteration 6](Sprint-backlog-6.md)
+- [Iteration 7](Sprint-backlog-7.md)
+- [Iteration 8](Sprint-backlog-8.md)
 
 ## Testing
 
-- [Test specification](test-specification)
-- [Usability tests](usability-tests)
+- [Test specification](Test-specification.md)
+- [Usability tests](Usability-tests.md)
 
 ## The Application
 
