@@ -10,8 +10,8 @@ const theme = createMuiTheme({
       main: '#ffab40',
     },
     background: {
-      default: '#222831',
-      paper: '#393e46',
+      default: '#141E30',
+      paper: '#3c4559',
     },
     header: '#6a1b9a',
     contrastThreshold: 4,

@@ -5,6 +5,9 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     flexDirection: 'row',
     display: 'flex',
+    backgroundSize: '400% 400%',
+    background: 'linear-gradient(0deg, #222831, #243B55, #141E30)',
+    overflow: 'auto'
   },
   mainContent: {
     flex: '1 0 auto',

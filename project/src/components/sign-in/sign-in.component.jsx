@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 
-import { Grid, Typography, Fade } from '@material-ui/core';
+import { Grid, Typography, Fade, Grow, Slide, Zoom } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import 'firebase/auth';
 import { AuthContext } from '../../contexts/AuthContext';
@@ -10,12 +10,8 @@ import { signIn } from '../../utils/api';
 
 const SignIn = () => {
   const classes = useStyles();
-  const [
-    accessToken,
-    setAccessToken,
-    setRefreshToken,
-    authenticate,
-  ] = useContext(AuthContext);
+  const [accessToken, setAccessToken, setRefreshToken, authenticate] =
+    useContext(AuthContext);
 
   useEffect(() => {
     authenticate();
@@ -23,32 +19,48 @@ const SignIn = () => {
 
   return (
     <Grid
-      className={classes.root}
+      className={classes.signIn}
       container
-      spacing={0}
+      // spacing={0}
       justify='center'
-      direction='column'
+      direction='row'
       alignItems='center'>
-      <Grid item>
-        <Fade
-          in={true}
-          style={{ transformOrigin: '0 0 0' }}
-          {...{ timeout: 1000 }}>
-          <img className={classes.logo} src={Logo} alt='VibeDuck logo' />
-        </Fade>
-      </Grid>
-      <Grid item className={classes.title}>
-        <Typography variant='h2'>VibeDuck</Typography>
-      </Grid>
-      <Grid item>
-        <Typography variant='subtitle1'>
-          Generate your own tailor-made playlists!
-        </Typography>
-      </Grid>
-      <Grid item className={classes.button}>
-        <Button color='primary' variant='contained' onClick={signIn}>
-          Log in with Spotify
-        </Button>
+      <Grid
+        item
+        container
+        direction='row'
+        alignItems='center'
+        justify='center'
+        spacing={4}
+        className={classes.title}>
+        <Grid item>
+          <Fade in={true} timeout={1000}>
+            <img className={classes.logo} src={Logo} alt='VibeDuck logo' />
+          </Fade>
+        </Grid>
+        <Grid item className={classes.titleContainer} direction='column'>
+          <Grow in={true} timeout={700}>
+            <Typography variant='h2'>VibeDuck</Typography>
+          </Grow>
+          <Zoom in={true} timeout={700}>
+            <Typography variant='subtitle1'>
+              Generate your own tailor-made playlists!
+            </Typography>
+          </Zoom>
+
+          <Grid item className={classes.buttonGrid}>
+            <Grow in={true} timeout={1000}>
+              <Button
+                className={classes.button}
+                color='primary'
+                size='medium'
+                variant='contained'
+                onClick={signIn}>
+                Log in with Spotify
+              </Button>
+            </Grow>
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );

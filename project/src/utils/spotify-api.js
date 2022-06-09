@@ -1,6 +1,5 @@
 import SpotifyApi from 'spotify-web-api-js';
 import {
-  setAccessTokenCookie,
   removeRefreshCookie,
   getRefreshToken,
   isAuthenticated,
