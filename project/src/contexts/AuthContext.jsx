@@ -6,6 +6,7 @@ import {
   setRefreshTokenCookie,
   isAuthenticated,
   removeRefreshCookie,
+  removeAccessTokenCookie,
 } from '../utils/cookie-helper';
 import querystring from 'querystring';
 import { refreshAccessToken } from '../utils/api';
@@ -14,6 +15,12 @@ export const AuthContext = createContext();
 export const AuthProvider = (props) => {
   const [accessToken, setAccessToken] = useState(getAccessToken() || '');
   const [refreshToken, setRefreshToken] = useState(getRefreshToken() || '');
+
+  const logOut = () => {
+    removeAccessTokenCookie();
+    removeRefreshCookie();
+    window.location = '/';
+  };
 
   const authenticate = async () => {
     if (isAuthenticated()) {
@@ -69,7 +76,13 @@ export const AuthProvider = (props) => {
 
   return (
     <AuthContext.Provider
-      value={[accessToken, setAccessToken, setRefreshToken, authenticate]}>
+      value={[
+        accessToken,
+        setAccessToken,
+        setRefreshToken,
+        authenticate,
+        logOut,
+      ]}>
       {props.children}
     </AuthContext.Provider>
   );
