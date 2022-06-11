@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/styles';
-import zIndex from '@material-ui/core/styles/zIndex';
 
 const useStyles = makeStyles((theme) => ({
   signIn: {
@@ -7,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     backgroundSize: '400% 400%',
     background: 'linear-gradient(0deg, #222831, #243B55, #141E30)',
-    // animation: '$gradient 10s ease-in-out infinite',
   },
   '@keyframes gradient': {
     '0%:': {
@@ -30,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     opacity: '0.8',
-    // marginRight: theme.spacing(2),
     height: 250,
     width: 250,
     boxShadow: `rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15p`,

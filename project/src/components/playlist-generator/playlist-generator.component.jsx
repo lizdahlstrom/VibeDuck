@@ -36,10 +36,6 @@ const PlaylistGenerator = () => {
     authenticate,
   ] = useContext(AuthContext);
 
-  useEffect(() => {
-    authenticate();
-  }, []);
-
   return (
     <SearchSeedsProvider>
       <PlaylistProvider>
