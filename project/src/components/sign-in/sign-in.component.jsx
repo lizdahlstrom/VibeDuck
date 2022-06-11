@@ -17,7 +17,6 @@ const SignIn = () => {
     <Grid
       className={classes.signIn}
       container
-      // spacing={0}
       justify='center'
       direction='row'
       alignItems='center'>
@@ -27,14 +26,13 @@ const SignIn = () => {
         direction='row'
         alignItems='center'
         justify='center'
-        spacing={4}
         className={classes.title}>
         <Grid item>
           <Fade in={true} timeout={1000}>
             <img className={classes.logo} src={Logo} alt='VibeDuck logo' />
           </Fade>
         </Grid>
-        <Grid item container className={classes.titleContainer} direction='column'>
+        <Grid item className={classes.titleContainer} direction='column'>
           <Grow in={true} timeout={700}>
             <Typography variant='h2'>VibeDuck</Typography>
           </Grow>
