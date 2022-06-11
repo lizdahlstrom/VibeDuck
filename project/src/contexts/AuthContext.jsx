@@ -27,7 +27,6 @@ export const AuthProvider = (props) => {
   };
 
   const authenticate = async () => {
-    console.log('call auth');
     if (getAccessToken() && getAccessToken() !== accessToken) {
       setAccessToken(getAccessToken());
       return;
