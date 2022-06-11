@@ -13,10 +13,6 @@ const SignIn = () => {
   const [accessToken, setAccessToken, setRefreshToken, authenticate] =
     useContext(AuthContext);
 
-  useEffect(() => {
-    authenticate();
-  }, []);
-
   return (
     <Grid
       className={classes.signIn}
@@ -38,7 +34,7 @@ const SignIn = () => {
             <img className={classes.logo} src={Logo} alt='VibeDuck logo' />
           </Fade>
         </Grid>
-        <Grid item className={classes.titleContainer} direction='column'>
+        <Grid item container className={classes.titleContainer} direction='column'>
           <Grow in={true} timeout={700}>
             <Typography variant='h2'>VibeDuck</Typography>
           </Grow>
