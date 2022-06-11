@@ -53,9 +53,8 @@ const getNewTokenIfNeeded = async () => {
       } catch (err) {
         // clean up invalid refresh cookie
         removeRefreshCookie();
+        signIn();
       }
-    } else {
-      signIn();
     }
   }
 };
